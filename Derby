@@ -1,0 +1,23 @@
+1.- Descargar Derby
+	- Introducir en Google: download derby
+	- Clic sobre el primer enlace
+	- Clic para descargar la versión 10.10.2.0
+	- Descomprimir (recordar dónde!!!)
+
+	http://ftp.cixug.es/apache//db/derby/db-derby-10.10.2.0/db-derby-10.10.2.0-bin.zip
+
+2.- Ejecutar $DERBY_HOME/bin/startNetworkServer.bat (doble clic sobre el fichero)
+	- Debería quedarse una consola abierta que dice que el derby está escuchando en el puerto 1527
+
+3.- Abrir perspectiva "Database Development" en Eclipse
+
+4.- Configurar una nueva conexión a Base de Datos
+	- Clic derecho sobre Database Connections y New
+	- Cargar nueva Driver
+	- Seleccionar Derby Client (y la versión más reciente)
+	- Cambiar el JAR List. Eliminar el derbyclient.jar preseleccionado y añadir uno nuevo, ubicado en: $DERBY_HOME/lib/derbyclient.jar
+	- Configurar BD:
+		- Nombre BD: blog
+		- Contraseña usuario: 123
+		- Seleccionar opción "Save password"
+		- Test connection
